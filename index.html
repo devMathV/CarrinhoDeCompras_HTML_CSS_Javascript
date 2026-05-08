@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de pelúcias</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <section id="container-produtos">
+        <div class="produto">
+            <img src="imgs/spike_pelucia.jpg" alt="Pelúcia do Spike" class="img-pelucia">
+            <h2 class="nome-produto">Pelúcia do Spike</h2>
+            <p class="valor">R$ 50,00</p>
+            <button class="adicionar-ao-carrinho">
+                <img src="imgs/carrinho.png" alt="Carrinho">
+                <p>Adicionar</p>
+            </button>
+        </div>
+        <div class="produto">
+            <img src="imgs/leon_pelucia.jpg" alt="Pelúcia do Leon" class="img-pelucia">
+            <h2 class="nome-produto">Pelúcia do Leon</h2>
+            <p class="valor">R$ 40,00</p>
+            <button class="adicionar-ao-carrinho">
+                <img src="imgs/carrinho.png" alt="Carrinho">
+                <p>Adicionar</p>
+            </button>
+        </div>
+        <div class="produto">
+            <img src="imgs/bruce_pelucia.png" alt="Pelúcia do Bruce" class="img-pelucia">
+            <h2 class="nome-produto">Pelúcia do Bruce</h2>
+            <p class="valor">R$ 60,00</p>
+            <button class="adicionar-ao-carrinho">
+                <img src="imgs/carrinho.png" alt="Carrinho">
+                <p>Adicionar</p>
+            </button>
+        </div>
+    </section>
+    <section id="carrinho">
+        <div id="carrinho-produtos">
+            <div class="produto">
+                <img src="imgs/spike_pelucia.jpg" alt="Pelúcia do Spike">
+                <h2 class="nome-produto">Pelúcia do Spike</h2>
+                <div class="quantidade">
+                    <button class="adicionar">+</button>
+                    <p class="quantidade-valor">1</p>
+                    <button class="remover">-</button>
+                    <p id="valor">R$ 50,00</p>
+                </div>
+            </div>
+            <div class="produto">
+                <img src="imgs/leon_pelucia.jpg" alt="Pelúcia do Spike">
+                <h2 class="nome-produto">Pelúcia do Spike</h2>
+                <div class="quantidade">
+                    <button class="adicionar">+</button>
+                    <p class="quantidade-valor">1</p>
+                    <button class="remover">-</button>
+                    <p id="valor">R$ 40,00</p>
+                </div>
+            </div>
+            <div class="produto">
+                <img src="imgs/bruce_pelucia.png" alt="Pelúcia do Spike">
+                <h2 class="nome-produto">Pelúcia do Bruce</h2>
+                <div class="quantidade">
+                    <button class="adicionar">+</button>
+                    <p class="quantidade-valor">1</p>
+                    <button class="remover">-</button>
+                    <p id="valor">R$ 60,00</p>
+                </div>
+            </div>
+        </div>
+        <button id="pagar">Pagar</button>
+    </section>
+</body>
+</html>
