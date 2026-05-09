@@ -38,38 +38,20 @@
     </section>
     <section id="carrinho">
         <div id="carrinho-produtos">
-            <div class="produto">
-                <img src="imgs/spike_pelucia.jpg" alt="Pelúcia do Spike">
-                <h2 class="nome-produto">Pelúcia do Spike</h2>
+            <div class="produto template">
+                <img src="" alt="">
+                <h2 class="nome-produto"></h2>
                 <div class="quantidade">
                     <button class="adicionar">+</button>
-                    <p class="quantidade-valor">1</p>
+                    <p class="quantidade-valor">0</p>
                     <button class="remover">-</button>
-                    <p id="valor">R$ 50,00</p>
-                </div>
-            </div>
-            <div class="produto">
-                <img src="imgs/leon_pelucia.jpg" alt="Pelúcia do Spike">
-                <h2 class="nome-produto">Pelúcia do Spike</h2>
-                <div class="quantidade">
-                    <button class="adicionar">+</button>
-                    <p class="quantidade-valor">1</p>
-                    <button class="remover">-</button>
-                    <p id="valor">R$ 40,00</p>
-                </div>
-            </div>
-            <div class="produto">
-                <img src="imgs/bruce_pelucia.png" alt="Pelúcia do Spike">
-                <h2 class="nome-produto">Pelúcia do Bruce</h2>
-                <div class="quantidade">
-                    <button class="adicionar">+</button>
-                    <p class="quantidade-valor">1</p>
-                    <button class="remover">-</button>
-                    <p id="valor">R$ 60,00</p>
+                    <p>R$ <span class="valor"></span>,00</p>
                 </div>
             </div>
         </div>
         <button id="pagar">Pagar</button>
+        <dialog>Pago com sucesso!</dialog>
     </section>
+    <script type="module" src="src/index.js"></script>
 </body>
 </html>

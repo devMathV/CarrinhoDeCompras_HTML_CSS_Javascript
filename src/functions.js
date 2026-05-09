@@ -5,11 +5,16 @@ const addProdutoAoCarrinho = (carrinho, produtoNome, preco) => {
         const prod = {
             nome: produtoNome,
             quant: 1,
-            preco: preco
+            preco: preco,
+            precoTotal() {
+                return this.quant * this.preco
+            }
         }
         carrinho.push(prod)
+        return false
     } else {
         carrinho[prodIndex].quant += 1
+        return true
     }
 }
 

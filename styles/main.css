@@ -123,8 +123,9 @@ section#carrinho .produto{
             font-weight: bold;
         }
 
-        p#valor {
-            margin-left: 10px;
+        .quantidade-valor {
+            text-align: center;
+            width: 20px;
         }
     }
 }
@@ -136,4 +137,8 @@ section#carrinho .produto{
     font-size: 18px;
     font-weight: bold;
     cursor: pointer;
+}
+
+#carrinho > #carrinho-produtos > .template {
+    display: none;
 }
