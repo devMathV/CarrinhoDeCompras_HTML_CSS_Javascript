@@ -35,12 +35,17 @@ const diminuirQuantidade = (carrinho, produtoNome) => {
 }
 
 const valorTotal = (carrinho) => {
-    return carrinho.reduce((a, p) => a + (p.preco * p.quant), 0).toFixed(2)
+    return carrinho.reduce((a, p) => a + (p.preco * p.quant), 0).toFixed(2).replace('.', ',')
+}
+
+const quantidadeTotal = (carrinho) => {
+    return carrinho.reduce((a, p) => a + p.quant, 0)
 }
 
 export {
     addProdutoAoCarrinho,
     aumentarQuantidade,
     diminuirQuantidade,
-    valorTotal
+    valorTotal,
+    quantidadeTotal,
 }

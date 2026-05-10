@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loja de pelúcias</title>
     <link rel="stylesheet" href="styles/main.css">
 </head>
+
 <body>
     <section id="container-produtos">
         <div class="produto">
@@ -37,6 +39,11 @@
         </div>
     </section>
     <section id="carrinho">
+        <button id="limpar-btn">Limpar</button>
+        <div id="mensagem-carrinho-vazio">
+            <img src="imgs/carrinho.png" alt="">
+            <h3>Carrinho Vazio!</h3>
+        </div>
         <div id="carrinho-produtos">
             <div class="produto template">
                 <img src="" alt="">
@@ -45,13 +52,21 @@
                     <button class="adicionar">+</button>
                     <p class="quantidade-valor">0</p>
                     <button class="remover">-</button>
-                    <p>R$ <span class="valor"></span>,00</p>
+                    <p class="valor"></p>
                 </div>
             </div>
         </div>
-        <button id="pagar">Pagar</button>
+        <div id="pagamento">
+            <div id="container-total">
+                <p id="titulo-total">Valor total:</p>
+                <p id="valor-total">R$ 0,00</p>
+                <p id="quantidade-total">/ 0 itens</p>
+            </div>
+            <button id="pagar">Pagar</button>
+        </div>
         <dialog>Pago com sucesso!</dialog>
     </section>
     <script type="module" src="src/index.js"></script>
 </body>
+
 </html>
