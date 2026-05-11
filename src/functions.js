@@ -92,6 +92,7 @@ const realizarPagamento = (carrinho) => {
     
     setTimeout(() => {
         modal.close()
+        modal.textContent = 'Pagamento realizado com sucesso!'
     }, 3000);
 }
 
