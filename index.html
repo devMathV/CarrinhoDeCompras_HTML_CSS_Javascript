@@ -10,28 +10,10 @@
 
 <body>
     <section id="container-produtos">
-        <div class="produto">
-            <img src="imgs/spike_pelucia.jpg" alt="Pelúcia do Spike" class="img-pelucia">
-            <h2 class="nome-produto">Pelúcia do Spike</h2>
-            <p class="valor">R$ 50,00</p>
-            <button class="adicionar-ao-carrinho">
-                <img src="imgs/carrinho.png" alt="Carrinho">
-                <p>Adicionar</p>
-            </button>
-        </div>
-        <div class="produto">
-            <img src="imgs/leon_pelucia.jpg" alt="Pelúcia do Leon" class="img-pelucia">
-            <h2 class="nome-produto">Pelúcia do Leon</h2>
-            <p class="valor">R$ 40,00</p>
-            <button class="adicionar-ao-carrinho">
-                <img src="imgs/carrinho.png" alt="Carrinho">
-                <p>Adicionar</p>
-            </button>
-        </div>
-        <div class="produto">
-            <img src="imgs/bruce_pelucia.png" alt="Pelúcia do Bruce" class="img-pelucia">
-            <h2 class="nome-produto">Pelúcia do Bruce</h2>
-            <p class="valor">R$ 60,00</p>
+        <div class="produto template-pelucia">
+            <img src="" alt="" class="img-pelucia">
+            <h2 class="nome-produto"></h2>
+            <p class="valor"></p>
             <button class="adicionar-ao-carrinho">
                 <img src="imgs/carrinho.png" alt="Carrinho">
                 <p>Adicionar</p>
@@ -45,7 +27,7 @@
             <h3>Carrinho Vazio!</h3>
         </div>
         <div id="carrinho-produtos">
-            <div class="produto template">
+            <div class="produto template-produto">
                 <img src="" alt="">
                 <h2 class="nome-produto"></h2>
                 <div class="quantidade">
@@ -60,11 +42,11 @@
             <div id="container-total">
                 <p id="titulo-total">Valor total:</p>
                 <p id="valor-total">R$ 0,00</p>
-                <p id="quantidade-total">/ 0 itens</p>
+                <p id="quantidade-total">/ 0 item</p>
             </div>
             <button id="pagar">Pagar</button>
         </div>
-        <dialog>Pago com sucesso!</dialog>
+        <dialog>Pagamento realizado com sucesso!</dialog>
     </section>
     <script type="module" src="src/index.js"></script>
 </body>

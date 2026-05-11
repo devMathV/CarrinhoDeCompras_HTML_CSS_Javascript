@@ -21,6 +21,8 @@ body {
 
 section#container-produtos {
     display: flex;
+    flex-flow: row wrap;
+
     justify-content: space-between;
     gap: 20px;
     margin-top: 30px;
@@ -71,6 +73,10 @@ section#container-produtos .produto {
     .adicionar-ao-carrinho:hover {
         background-color: #b0b0b0;
     }
+}
+
+section#container-produtos .template-pelucia {
+    display: none;
 }
 
 /* Seção do carrinho */
@@ -164,7 +170,7 @@ section#carrinho .produto {
     }
 }
 
-#carrinho > #carrinho-produtos > .template {
+#carrinho > #carrinho-produtos > .template-produto {
     display: none;
 }
 
@@ -205,4 +211,11 @@ section#carrinho .produto {
         font-size: 18px;
         padding: 10px;
     }
+}
+
+dialog {
+    margin: auto;
+    padding: 50px;
+
+    font-size: 22px;
 }
